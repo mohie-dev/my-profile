@@ -12,10 +12,10 @@ export default function Home() {
       {/* Floating Header / Nav could be added here */}
       
       <Hero />
-      <About />
-      <Skills />
       <Projects />
+      <Skills />
       <Achievements />
+      <About />
       <Testimonials />
       <Contact />
       

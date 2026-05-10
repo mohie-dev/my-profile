@@ -36,12 +36,10 @@ export function Contact() {
             </p>
 
             <div className="space-y-4 mb-12">
-              <ContactLink href="mailto:hello@example.com" icon={<Mail />} text="abdelrahman@example.com" />
-              <ContactLink href="#" icon={<Code />} text="github.com/abdelrahman" />
-              <ContactLink href="#" icon={<Briefcase />} text="linkedin.com/in/abdelrahman" />
-              <ContactLink href="#" icon={<MessageCircle />} text="@abdelrahman_eng" />
-              <ContactLink href="#" icon={<Camera />} text="@abdelrahman.lifts" />
-              <ContactLink href="#" icon={<MessageSquare />} text="Discord: abdelrahman#1234" />
+              <ContactLink href="mailto:[EMAIL_ADDRESS]" icon={<Mail />} text="obaydafarow@gmail.com" />
+              <ContactLink href="https://github.com/mohie-dev/" icon={<Code />} text="GitHub" />
+              <ContactLink href="https://www.linkedin.com/in/abdelrahman-mohie-dev/" icon={<Briefcase />} text="LinkedIn" />
+              <ContactLink href="https://www.instagram.com/mohie.dev/" icon={<MessageCircle />} text="Instagram" />
             </div>
           </motion.div>
 

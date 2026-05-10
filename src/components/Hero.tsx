@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 import { Code, Briefcase, MessageCircle, Mail } from "lucide-react";
 import Image from "next/image";
+import profilePic from "../../public/profile-web.jpeg";
 
 export function Hero() {
   return (
@@ -22,7 +23,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-electric-blue/30 blur-2xl rounded-full -z-10" />
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-electric-blue/50 p-1 bg-black/50 backdrop-blur-sm overflow-hidden">
             <Image
-              src="/profile-web.jpeg"
+              src={profilePic}
               alt="Mohie"
               width={160}
               height={160}

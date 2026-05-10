@@ -7,17 +7,17 @@ const skills = [
   {
     category: "Backend Architecture",
     icon: <Server className="w-6 h-6" />,
-    items: ["Node.js", "NestJS", "Express", "RESTful APIs", "GraphQL", "Microservices", "WebSockets"],
+    items: ["Node.js", "NestJS", "Express", "RESTful APIs", "GraphQL", "Microservices", "WebSockets", "AI Automation (n8n)"],
   },
   {
     category: "Databases",
     icon: <Database className="w-6 h-6" />,
-    items: ["PostgreSQL", "MongoDB", "Redis", "Prisma ORM", "TypeORM", "Database Design"],
+    items: ["PostgreSQL", "MongoDB", "MySQL", "Prisma ORM", "TypeORM", "Database Design"],
   },
   {
     category: "DevOps & Cloud",
     icon: <Container className="w-6 h-6" />,
-    items: ["Docker", "Linux", "CI/CD", "AWS basics", "Vercel", "Railway"],
+    items: ["Docker", "Linux", "CI/CD", "AWS basics", "VMs", "Vercel", "Railway"],
   },
   {
     category: "Languages & Core",

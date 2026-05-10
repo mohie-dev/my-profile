@@ -5,27 +5,27 @@ import { Trophy, Milestone, BookOpen, Star } from "lucide-react";
 
 const milestones = [
   {
-    year: "2024",
-    title: "Mastered Advanced Distributed Systems",
-    description: "Deep dive into microservices architecture, gRPC, and message brokers like RabbitMQ and Kafka.",
+    year: "2026 - Now",
+    title: "Starting My First Full-time Job",
+    description: "My first contract as a Junior Backend Developer at 'Meta Software' in ITIDA | Smart Village.",
     icon: <Star className="w-5 h-5" />,
   },
   {
-    year: "2023",
+    year: "2025 - 2026",
     title: "Built Real-world API Gateways",
-    description: "Architected and deployed custom API gateways managing authentication, rate limiting, and routing.",
+    description: "Architected and deployed custom API gateways managing authentication, rate limiting, and routing. And implemnted my knowledge in System Design and API Design. And I was able to secure my first job at Meta Software as a Backend Developer in this period.",
     icon: <Trophy className="w-5 h-5" />,
   },
   {
-    year: "2022",
+    year: "2024 - 2025",
     title: "Backend Specialization",
-    description: "Transitioned focus entirely to backend engineering, mastering Node.js, Express, and PostgreSQL.",
+    description: "Started to learn backend development, and I started to implement my own backend applications with Express.js and MongoDB",
     icon: <Milestone className="w-5 h-5" />,
   },
   {
-    year: "2021",
+    year: "2023 - 2024",
     title: "Began Programming Journey",
-    description: "Wrote my first lines of code. Discovered a passion for logic, algorithms, and system design.",
+    description: "In October 2023, I started my programming journey, it was a big step in my life. I joind to DECI program that helped me to learn programming and development, and it was a great experience for me. I achieved my first milestone by finish level 1 & 2 in october 2024",
     icon: <BookOpen className="w-5 h-5" />,
   },
 ];
@@ -42,7 +42,7 @@ export function Achievements() {
           className="mb-20 text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            The <span className="text-gradient">Journey</span>
+            Recent <span className="text-gradient">Milestones</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             A timeline of continuous growth, technical milestones, and the relentless pursuit of engineering excellence.
