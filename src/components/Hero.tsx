@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 import { Code, Briefcase, MessageCircle, Mail } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -13,9 +14,28 @@ export function Hero() {
       
       <div className="container relative z-10 mx-auto px-6 flex flex-col items-center text-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative mb-8"
+        >
+          <div className="absolute inset-0 bg-electric-blue/30 blur-2xl rounded-full -z-10" />
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-electric-blue/50 p-1 bg-black/50 backdrop-blur-sm overflow-hidden">
+            <Image
+              src="/profile-web.jpeg"
+              alt="Mohie"
+              width={160}
+              height={160}
+              className="w-full h-full object-cover rounded-full"
+              priority
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-electric-blue/30 mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-electric-blue animate-pulse" />
@@ -25,7 +45,7 @@ export function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
         >
           Hi, I&apos;m <span className="text-gradient">Mohie</span>
@@ -34,7 +54,7 @@ export function Hero() {
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-2xl md:text-3xl text-gray-400 font-medium mb-8 max-w-3xl"
         >
           Backend Developer | Software Engineer | AI Enthusiast | Athlete
@@ -43,7 +63,7 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           className="text-lg text-gray-500 max-w-2xl mb-12 leading-relaxed"
         >
           Building scalable systems, modern backend architectures, and meaningful digital experiences. Let&apos;s build the future together.
@@ -52,8 +72,8 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center gap-4 mb-25"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          className="flex flex-col sm:flex-row items-center gap-4 mb-24"
         >
           <Button size="lg" className="w-full sm:w-auto"  onClick={() => window.location.href = "#projects"}>
             View Projects
@@ -66,7 +86,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 1, delay: 0.9 }}
           className="flex items-center gap-6"
         >
           <SocialLink href="https://github.com/mohie-dev/" icon={<Code />} />
@@ -78,11 +98,24 @@ export function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
+        transition={{ duration: 1, delay: 1.5 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gray-500 to-transparent" />
+        <div className="w-[26px] h-[42px] rounded-full border-2 border-white/20 flex justify-center p-2">
+          <motion.div
+            animate={{
+              y: [0, 12, 0],
+              opacity: [1, 0, 1],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="w-1.5 h-1.5 rounded-full bg-electric-blue shadow-[0_0_8px_#00f0ff]"
+          />
+        </div>
+        <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-medium">Scroll</span>
       </motion.div>
     </section>
   );
