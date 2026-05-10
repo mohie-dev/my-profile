@@ -32,7 +32,7 @@ const milestones = [
 
 export function Achievements() {
   return (
-    <section className="relative py-32 bg-[#080808]" id="journey">
+    <section className="relative py-32 bg-[#080808] overflow-hidden" id="journey">
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

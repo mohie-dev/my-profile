@@ -28,7 +28,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section className="relative py-32 bg-[#080808]" id="skills">
+    <section className="relative py-32 bg-[#080808] overflow-hidden" id="skills">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

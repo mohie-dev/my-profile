@@ -6,7 +6,7 @@ import { Code, Briefcase, MessageCircle, Mail, Camera, MessageSquare } from "luc
 
 export function Contact() {
   return (
-    <section className="relative py-32 bg-[#080808]" id="contact">
+    <section className="relative py-32 bg-[#080808] overflow-hidden" id="contact">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

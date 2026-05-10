@@ -20,7 +20,7 @@ const quotes = [
 
 export function Testimonials() {
   return (
-    <section className="relative py-32 bg-[#050505]" id="philosophy">
+    <section className="relative py-32 bg-[#050505] overflow-hidden" id="philosophy">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
