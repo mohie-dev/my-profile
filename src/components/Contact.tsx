@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
-import { Code, Briefcase, MessageCircle, Mail, Camera, MessageSquare } from "lucide-react";
+import { Code, Briefcase, MessageCircle, Mail, Camera, MessageSquare, Phone } from "lucide-react";
 
 export function Contact() {
   return (
@@ -36,7 +36,8 @@ export function Contact() {
             </p>
 
             <div className="space-y-4 mb-12">
-              <ContactLink href="mailto:[EMAIL_ADDRESS]" icon={<Mail />} text="obaydafarow@gmail.com" />
+              <ContactLink href="mailto:obaydafarow@gmail.com" icon={<Mail />} text="obaydafarow@gmail.com" />
+              <ContactLink href="https://wa.me/+201094790608" icon={<Phone />} text="+20 109 479 0608" />
               <ContactLink href="https://github.com/mohie-dev/" icon={<Code />} text="GitHub" />
               <ContactLink href="https://www.linkedin.com/in/abdelrahman-mohie-dev/" icon={<Briefcase />} text="LinkedIn" />
               <ContactLink href="https://www.instagram.com/mohie.dev/" icon={<MessageCircle />} text="Instagram" />
@@ -57,7 +58,7 @@ export function Contact() {
                 type="text"
                 id="name"
                 className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white focus:outline-none focus:border-electric-blue focus:ring-1 focus:ring-electric-blue transition-all"
-                placeholder="John Doe"
+                placeholder="Mohamed Ahmed"
                 suppressHydrationWarning
               />
             </div>
@@ -67,7 +68,7 @@ export function Contact() {
                 type="email"
                 id="email"
                 className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white focus:outline-none focus:border-electric-blue focus:ring-1 focus:ring-electric-blue transition-all"
-                placeholder="john@example.com"
+                placeholder="mo@example.com"
                 suppressHydrationWarning
               />
             </div>

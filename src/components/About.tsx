@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Code2, Dumbbell, Brain, Target, Medal, UserCheck } from "lucide-react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
@@ -17,6 +18,14 @@ const images = [
 ];
 
 export function About() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <section className="relative py-32 overflow-hidden bg-[#050505]" id="about">
       {/* Background Glow */}
@@ -66,10 +75,10 @@ export function About() {
               </div>
               
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
-                <SmallStat value="500K+" label="Lines of Code" icon={<Code2 className="w-4 h-4" />} />
-                <SmallStat value="30+" label="Projects" icon={<Target className="w-4 h-4" />} />
-                <SmallStat value="5,000+" label="Hours Learning" icon={<Brain className="w-4 h-4" />} />
-                <SmallStat value="1,000+" label="Gym Sessions" icon={<Dumbbell className="w-4 h-4" />} />
+                <SmallStat value="20+" label="Project Done" icon={<Code2 className="w-4 h-4" />} />
+                <SmallStat value="2K+" label="Followers" icon={<Target className="w-4 h-4" />} />
+                <SmallStat value="1Y+" label="Of Experience" icon={<Brain className="w-4 h-4" />} />
+                <SmallStat value="11Y+" label="Training Hard" icon={<Dumbbell className="w-4 h-4" />} />
               </div>
             </div>
           </motion.div>

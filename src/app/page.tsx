@@ -3,7 +3,7 @@ import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Achievements } from "@/components/Achievements";
-import { Testimonials } from "@/components/Testimonials";
+import { LatestNews } from "@/components/LatestNews";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
@@ -14,9 +14,9 @@ export default function Home() {
       <Hero />
       <Projects />
       <Skills />
+      <LatestNews />
       <Achievements />
       <About />
-      <Testimonials />
       <Contact />
       
       {/* Footer */}
