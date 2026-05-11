@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
-import { Code, Briefcase, MessageCircle, Mail, Camera, MessageSquare, Phone } from "lucide-react";
+import { Code, Briefcase, Mail, Camera, Phone, Bird } from "lucide-react";
 
 export function Contact() {
   return (
@@ -40,7 +40,7 @@ export function Contact() {
               <ContactLink href="https://wa.me/+201094790608" icon={<Phone />} text="+20 109 479 0608" />
               <ContactLink href="https://github.com/mohie-dev/" icon={<Code />} text="GitHub" />
               <ContactLink href="https://www.linkedin.com/in/abdelrahman-mohie-dev/" icon={<Briefcase />} text="LinkedIn" />
-              <ContactLink href="https://www.instagram.com/mohie.dev/" icon={<MessageCircle />} text="Instagram" />
+              <ContactLink href="https://www.instagram.com/mohie.dev/" icon={<Camera />} text="Instagram" />
             </div>
           </motion.div>
 
