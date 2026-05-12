@@ -101,7 +101,7 @@ export function About() {
               
               <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Discipline Off-Screen</h3>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                Beyond the screen, I am a <span className="text-white font-medium">high-level Judo player</span> and dedicated bodybuilder. These aren&apos;t just hobbies; they are the foundation of my engineering mindset.
+                Beyond the screen, I am a <span className="text-white font-medium">high-level Judo player </span> and dedicated bodybuilder. These aren&apos;t just hobbies; they are the foundation of my engineering mindset.
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-[10px] uppercase tracking-wider text-gray-300">Competitive Judo</span>

@@ -22,7 +22,7 @@ const skills = [
   {
     category: "Languages & Core",
     icon: <Code className="w-6 h-6" />,
-    items: ["TypeScript", "JavaScript", "C++", "Python","System Design", "OOP", "Data Structures"],
+    items: ["TypeScript", "JavaScript", "C++", "Python","System Design", "OOP", "Data Structures", "Algorithm"],
   },
 ];
 
