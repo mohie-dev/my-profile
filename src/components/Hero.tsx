@@ -8,7 +8,7 @@ import profilePic from "../../public/profile-web.jpeg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32">
       {/* Background Gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-electric-blue/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-soft-purple/20 blur-[100px] rounded-full pointer-events-none" />
@@ -74,7 +74,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-          className="flex flex-col sm:flex-row items-center gap-4 mb-24"
+          className="flex flex-col sm:flex-row items-center gap-4 mb-10"
         >
           <Button size="lg" className="w-full sm:w-auto"  onClick={() => window.location.href = "#projects"}>
             View Projects
@@ -102,21 +102,21 @@ export function Hero() {
         transition={{ duration: 1, delay: 1.5 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <div className="w-[26px] h-[42px] rounded-full border-2 border-white/20 flex justify-center p-2">
+        <div className="w-[30px] h-[48px] rounded-full border-2 border-white/20 flex justify-center items-start pt-2">
           <motion.div
             animate={{
-              y: [0, 12, 0],
-              opacity: [1, 0, 1],
+              y: [0, 16, 0],
+              opacity: [1, 0.2, 1],
             }}
             transition={{
               duration: 2,
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="w-1.5 h-1.5 rounded-full bg-electric-blue shadow-[0_0_8px_#00f0ff]"
+            className="w-1.5 h-3 rounded-full bg-electric-blue shadow-[0_0_10px_#00f0ff]"
           />
         </div>
-        <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-medium">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-medium hover:text-electric-blue transition-colors cursor-pointer" onClick={() => window.location.href = "#experience"}>Scroll</span>
       </motion.div>
     </section>
   );
