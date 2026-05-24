@@ -4,6 +4,8 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  href?: string;
+  download?: boolean;
   variant?: "primary" | "secondary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
@@ -11,6 +13,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({
   className,
+  href,
+  download = false,
   variant = "primary",
   size = "md",
   children,
@@ -31,10 +35,20 @@ export function Button({
     lg: "h-14 px-10 text-lg",
   };
 
+  const classes = cn(baseStyles, variants[variant], sizes[size], className);
+
+  if (href) {
+    return (
+      <a href={href} className={classes} {...(props as any)} {...(download ? { download: "" } : {})}>
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
-      className={cn(baseStyles, variants[variant], sizes[size], className)}
-      {...props}
+      className={classes}
+      {...(props as any)}
       suppressHydrationWarning
     >
       {children}

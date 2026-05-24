@@ -40,6 +40,7 @@ export function Contact() {
               <ContactLink href="https://wa.me/+201094790608" icon={<Phone />} text="+20 109 479 0608" />
               <ContactLink href="https://github.com/mohie-dev/" icon={<Code />} text="GitHub" />
               <ContactLink href="https://www.linkedin.com/in/abdelrahman-mohie-dev/" icon={<Briefcase />} text="LinkedIn" />
+              <ContactLink href="/Mohie_CV.pdf" icon={<Briefcase />} text="Download CV" download />
               <ContactLink href="https://www.instagram.com/mohie.dev/" icon={<Camera />} text="Instagram" />
             </div>
           </motion.div>
@@ -92,13 +93,14 @@ export function Contact() {
   );
 }
 
-function ContactLink({ href, icon, text }: { href: string; icon: React.ReactNode; text: string }) {
+function ContactLink({ href, icon, text, download = false }: { href: string; icon: React.ReactNode; text: string; download?: boolean }) {
   return (
     <a
       href={href}
       className="flex items-center gap-4 text-gray-400 hover:text-electric-blue transition-colors group"
       target="_blank"
       rel="noopener noreferrer"
+      {...(download ? { download: "" } : {})}
     >
       <div className="p-2 rounded-lg bg-white/5 group-hover:bg-electric-blue/10 transition-colors">
         {icon}

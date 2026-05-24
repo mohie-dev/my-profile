@@ -82,6 +82,9 @@ export function Hero() {
           <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = "#contact"}>
             Contact Me
           </Button>
+          <Button href="/Mohie_CV.pdf" download variant="outline" size="lg" className="w-full sm:w-auto">
+            Download CV
+          </Button>
         </motion.div>
 
         <motion.div
