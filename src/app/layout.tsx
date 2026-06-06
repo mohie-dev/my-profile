@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mohie | Software Engineer",
   description: "Cinematic, modern personal portfolio for Mohie, Backend Developer and Software Engineer.",
+  icons: {
+    icon: "/mohie-icon-light.svg",
+    },
 };
 
 export default function RootLayout({
