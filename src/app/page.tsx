@@ -24,7 +24,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 text-center bg-[#050505]">
         <p className="text-gray-500 text-sm" suppressHydrationWarning>
-          © {new Date().getFullYear()} Abdelrahman. All rights reserved.
+          © {new Date().getFullYear()} Mohie. All rights reserved.
         </p>
       </footer>
     </main>

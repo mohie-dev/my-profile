@@ -8,16 +8,25 @@ const projects = [
     title: "Future Platform (LMS)",
     description:
       "Designed and developed a scalable backend intended to serve as a core academic system for college use, based on official regulations and business rules. Implemented complex business logic for academic workflows, including course management, enrollments, and student lifecycle. Built an advanced role-based permission system with fine-grained access control. Developed a GPA/​CGPA engine and delivered professional API documentation.",
-    tech: ["NestJS", "PostgreSQL", "TypeORM", "Docker", "Rate Limiting"],
+    tech: ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "Docker", "Rate Limiting"],
     github: "https://github.com/mohie-dev/Future-Platform",
     demo: "https://future-platform-indol.vercel.app/",
     image: "/future-cover.png",
   },
   {
-    title: "Zimmah Platform",
+    title: "Aqnaeni App | اقنعني",
+    description:
+      "Aqnaeni is an Arabic interactive game experience for group sessions where players create topics, add questions, approve challenges, and vote to uncover the defender. The application includes a React + Vite frontend and a Node.js + Express backend with MongoDB persistence.",
+    tech: ["Express", "TypeScript", "MongoDB", "React", "Tailwind"],
+    github: "https://github.com/mohie-dev/aqnaeni-app",
+    demo: "https://aqnaeni.vercel.app/",
+    image: "/aqnaeni-cover.png",
+  },
+  {
+    title: "Zimmah Platform | ذِمَّة",
     description:
       "A system built to secure and verify ownership of valuable assets. It was a first attempt to work with Next.js(API Routes), MySQL, and Prisma, also I contributed in it as a Backend Developer in this period I was with company called 'Meta Software' in ITIDA | Smart Village",
-    tech: ["Next.js(API Routes)", "MySQL", "Prisma"],
+    tech: ["Next.js(API Routes)", "TypeScript", "MySQL", "Prisma"],
     demo: "https://platform-zimmah.vercel.app/",
     image: "/zimmah-cover.jpeg",
   },
@@ -25,15 +34,33 @@ const projects = [
     title: "Ordering System",
     description:
       "Developed a complete backend system for managing restaurant operations, including order creation, updates, and real-time status handling with scalable API design. Implemented the full order lifecycle with proper business logic to ensure consistency and smooth workflow execution. Integrated Stripe for secure online payments and built admin features with analytics to monitor orders, track performance, and manage the system efficiently.",
-    tech: ["Node.js", "Express", "MongoDB", "JWT", "Stripe"],
+    tech: [ "Express", "JavaScript","MongoDB", "JWT", "Stripe"],
     github: "https://github.com/mohie-dev/restaurant_management_system_backend",
     image: "/order-cover.png",
+  },
+  {
+    title: "Grade View | نظام عرض النتائج",
+    description:
+      "A modern, comprehensive web application designed for universities and educational institutions to efficiently manage and display student academic results. Grade View offers a seamless experience for students to query their results securely using their Seat Number and National ID.",
+    tech: [      
+      "Nestjs",
+      "TypeScript",
+      "MongoDB",
+      "exceljs",
+      "Next.js",
+      "Tailwind",
+    ],
+    github: "https://github.com/mohie-dev/grade-view",
+    image: "/grade-view-cover.png",
   },
 ];
 
 export function Projects() {
   return (
-    <section className="relative py-32 bg-[#050505] overflow-hidden" id="projects">
+    <section
+      className="relative py-32 bg-[#050505] overflow-hidden"
+      id="projects"
+    >
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -54,11 +81,9 @@ export function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, index) => {
-            const hasGithub =
-              project.github && project.github !== "#";
+            const hasGithub = project.github && project.github !== "#";
 
-            const hasDemo =
-              project.demo && project.demo !== "#";
+            const hasDemo = project.demo && project.demo !== "#";
 
             return (
               <motion.div
@@ -83,9 +108,7 @@ export function Projects() {
                     {project.title}
                   </h3>
 
-                  <p className="text-gray-400 mb-6">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-400 mb-6">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-8">
                     {project.tech.map((tech, techIndex) => (

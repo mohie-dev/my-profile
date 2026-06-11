@@ -58,16 +58,16 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-2xl md:text-3xl text-gray-400 font-medium mb-8 max-w-3xl"
         >
-          Backend Developer | Software Engineer | AI Enthusiast | Athlete
+          Software Engineer | Athlete
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="text-lg text-gray-500 max-w-2xl mb-12 leading-relaxed"
+          className="text-md text-gray-500 max-w-2xl mb-12 leading-relaxed"
         >
-          Building scalable systems, modern backend architectures, and meaningful digital experiences. Let&apos;s build the future together.
+          Building scalable systems, modern backend architectures, and meaningful digital experiences, AI Automation, And DevOps Engineering. Let&apos;s build the future together.
         </motion.p>
 
         <motion.div

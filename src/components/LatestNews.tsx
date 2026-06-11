@@ -11,7 +11,7 @@ const newsItems = [
     description: "Excited to start my Cloud Computing learning journey with Manara! I’ve just earned my first badge and taken the first step on this path.",
     image: "/news/Wanderer.png", // Placeholder
     link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_cloudcomputing-manara-learningjourney-share-7468658942588604417-6ZJA/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "2 Days Ago"
+    date: "1 Week ago"
   },
   {
     title: "My Experience with gRPC",
