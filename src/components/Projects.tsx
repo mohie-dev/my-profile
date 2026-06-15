@@ -51,6 +51,7 @@ const projects = [
       "Tailwind",
     ],
     github: "https://github.com/mohie-dev/grade-view",
+    demo: "https://cs-natiga.vercel.app/",
     image: "/grade-view-cover.png",
   },
 ];
