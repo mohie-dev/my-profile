@@ -7,7 +7,7 @@ const skills = [
   {
     category: "Backend Architecture",
     icon: <Server className="w-6 h-6" />,
-    items: ["Node.js", "NestJS", "Express", "RESTful APIs", "GraphQL", "Microservices", "WebSockets", "AI Automation (n8n)"],
+    items: ["Node.js", "NestJS", "Express", "RESTful APIs", "gRPC", "GraphQL", "WebSockets", "AI Automation (n8n)"],
   },
   {
     category: "Databases",
@@ -17,7 +17,7 @@ const skills = [
   {
     category: "DevOps & Cloud",
     icon: <Container className="w-6 h-6" />,
-    items: ["Docker", "Linux", "CI/CD", "AWS basics", "VMs", "Vercel", "Railway"],
+    items: ["Docker", "Linux", "CI/CD", "AWS", "VMs", "Vercel", "Railway"],
   },
   {
     category: "Languages & Core",

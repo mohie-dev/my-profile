@@ -7,11 +7,11 @@ import Image from "next/image";
 
 const newsItems = [
   {
-    title: "Start my Cloud Computing learning journey with Manara",
-    description: "Excited to start my Cloud Computing learning journey with Manara! I’ve just earned my first badge and taken the first step on this path.",
-    image: "/news/Wanderer.png", // Placeholder
-    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_cloudcomputing-manara-learningjourney-share-7468658942588604417-6ZJA/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "1 Week ago"
+    title: "First Certificate in my cloud computing journey",
+    description: "This is just the first step in my Cloud & DevOps journey. Looking forward to diving deeper into AWS services, building hands-on projects, and continuously improving my skills. A big thank you to Manara for providing such a great learning experience.",
+    image: "https://res.cloudinary.com/ulbm5bpm/image/upload/f_auto,q_auto/manara_intro_cloud_computing_AWS_ahh7qv",
+    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_aws-cloudcomputing-devops-share-7482422469929250816-wkp-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
+    date: "2 days ago"
   },
   {
     title: "My Experience with gRPC",
