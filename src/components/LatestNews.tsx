@@ -7,47 +7,40 @@ import Image from "next/image";
 
 const newsItems = [
   {
-    title: "First Certificate in my cloud computing journey",
-    description: "This is just the first step in my Cloud & DevOps journey. Looking forward to diving deeper into AWS services, building hands-on projects, and continuously improving my skills. A big thank you to Manara for providing such a great learning experience.",
-    image: "https://res.cloudinary.com/ulbm5bpm/image/upload/f_auto,q_auto/manara_intro_cloud_computing_AWS_ahh7qv",
-    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_aws-cloudcomputing-devops-share-7482422469929250816-wkp-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "2 days ago"
+    title: "Internship Completion In Meta Software",
+    description: "I'm excited to announce that I have completed my internship at Meta. It was a great experience to work with such a talented team and learn from them. I am grateful for the opportunity to have been a part of Meta and I look forward to what the future holds.",
+    image: "https://res.cloudinary.com/ulbm5bpm/image/upload/f_auto,q_auto/meta-software-intern_xq5qfh", // Placeholder
+    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_backenddevelopment-backendengineer-nestjs-share-7493292590201712640-2wv3/",
+    date: "1 Week Ago"
   },
   {
-    title: "My Experience with gRPC",
-    description: "My Experience with gRPC and first distributed system using Protocol Buffers. It was a great experience.",
-    image: "/news/grpc.png", // Placeholder
-    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%81%D8%A7%D9%87%D9%8A%D9%85-%D8%A7%D9%84%D9%84%D9%8A-%D9%84%D8%A7%D9%8A%D8%B3%D8%B9-%D9%84%D8%A3%D9%8A-developer-%D8%AC%D9%87%D9%84%D9%87%D8%A7-ugcPost-7458550209443418114-WsIp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "4 Weeks Ago"
+    title: "Earned My AWS Certified Cloud Practitioner",
+    description: "Alhamdulillah, I'm happy to share that I have earned the AWS Certified Cloud Practitioner certification from Amazon Web Services (AWS).",
+    image: "https://res.cloudinary.com/ulbm5bpm/image/upload/f_auto,q_auto/aws-certified-cloud-practitioner_pcio2h", // Placeholder
+    link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_aws-awscertified-cloudpractitioner-share-7489654112469467137-0Kyg/",
+    date: "3 Weeks Ago"
   },
   {
     title: "My Participation In Mega MU Job Fair",
     description: "My participation in Mega MU Job Fair at Mansoura University. I met great people who inspires me to be better in the future. It was a great experience.",
     image: "/news/elzero.jpeg", // Placeholder
     link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_%D8%A7%D8%B3%D8%AA%D9%83%D9%85%D8%A7%D9%84%D8%A7-%D9%84%D8%B1%D8%AD%D8%A9-%D8%A7%D9%84-events-%D8%A7%D9%84%D9%84%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%AF-%D9%85%D8%B3%D8%AD%D9%88%D9%84-share-7454593454724046848--OtC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "1 Month Ago"
+    date: "4 Months Ago"
   },
   {
     title: "My Participation In The TCCD Job Fair",
     description: "My participation in The TCCD Job Fair at Cairo University.",
     image: "/news/tccd.png", // Placeholder
     link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_%D8%A7%D9%85%D8%A8%D8%A7%D8%B1%D8%AD-%D9%83%D8%A7%D9%86%D8%AA-%D8%A3%D9%88%D9%84-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%84%D9%8A%D8%A7-%D9%81%D9%8A-%D8%AD%D8%B6%D9%88%D8%B1-%D9%88%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-ugcPost-7453110748668637185-Zo7o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "2 Month Ago"
+    date: "5 Months Ago"
   },
   {
     title: "Attend Mega fair MU",
     description: "I’m excited to announce that I will be member in Mega Job Fair at the Mansoura University. .",
     image: "/news/attend-photo.png", // Placeholder
     link: "https://www.linkedin.com/posts/abdelrahman-mohie-dev_megfair-megaabrteam-shapingabrfutures-share-7450469000762966016-joAO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "2 Month Ago"
+    date: "5 Months Ago"
   },
-  {
-    title: "Joining Meta Software",
-    description: "Excited to share that I've joined Meta Software as a Backend Developer! Building scalable systems in Smart Village.",
-    image: "/news/meta-logo.png", // Placeholder
-    link: "https://www.linkedin.com/posts/after-a-rigorous-review-of-334-applications-share-7448013648666759170-oVre?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAERxFicBLtHkh-N5Pxb6Z_9BfsmSzrplHBU",
-    date: "4 Months Ago"
-  }
 ];
 
 export function LatestNews() {
